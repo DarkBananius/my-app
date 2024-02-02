@@ -7,8 +7,8 @@ export const addUser = (login, password) => {
       "Content-Type": "application/json;charset=utf-8",
     },
     body: JSON.stringify({
-      login: login,
-      password: password,
+      login,
+      password,
       registed_at: generateDate(),
       role_id: 2,
     }),

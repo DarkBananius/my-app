@@ -23,8 +23,7 @@
 - сессия текущего пользователя: login / password / role
 
 Схема для редакс стора (на клиенте):
--user: id / login / roleId
-
+- user: id / login / roleId
 - posts: массив post: id / title / imageUrl / publishedAt / commentsCount
 - post: id / title / imageUrl / content / publishedAt / comments: массив comment: id / author / content/ publishedAt
 - users: массив user: id / login / registeredAt / role
