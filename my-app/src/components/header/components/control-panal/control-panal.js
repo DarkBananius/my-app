@@ -45,7 +45,7 @@ const ControlPanelContainer = ({ className }) => {
 						<UserName>{login}</UserName>
 						<StyledIcon>
 							<Icon
-								id="fa-sing-out"
+								id="fa fa-sign-out"
 								margin="0 0 0 10px"
 								onClick={() => dispatch(logout(session))}
 							/>
