@@ -108,8 +108,8 @@ const AuthorizationContainer = ({ className }) => {
 
 export const Authorization = styled(AuthorizationContainer)`
 	display: flex;
-	align-items: center;
 	flex-direction: column;
+	align-items: center;
 
 	& > form {
 		display: flex;
