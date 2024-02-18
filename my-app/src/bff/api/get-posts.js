@@ -1,7 +1,9 @@
 import { transformPost } from "../transformers";
 
-export const getPosts = (page, limit) =>
-	fetch(`http://localhost:3005/posts?_page=${page}&_limit=${limit}`)
+export const getPosts = (searchPhrase, page, limit) =>
+	fetch(
+		`http://localhost:3005/posts?title_like=${searchPhrase}&_page=${page}&_limit=${limit}`,
+	)
 		.then((loadedPosts) =>
 			Promise.all([loadedPosts.json(), loadedPosts.headers.get("Link")]),
 		)
