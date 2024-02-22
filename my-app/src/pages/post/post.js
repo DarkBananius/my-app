@@ -6,8 +6,8 @@ import { Error, PrivateContent } from "../../components";
 import { useServerRequest } from "../../hooks";
 import { RESET_POST_DATA, loadPostAsync } from "../../actions";
 import { selectPost } from "../../selectors";
-import styled from "styled-components";
 import { ROLE } from "../../constants";
+import styled from "styled-components";
 
 const PostContainer = ({ className }) => {
 	const [error, setError] = useState(null);
